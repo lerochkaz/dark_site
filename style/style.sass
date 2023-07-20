@@ -1,0 +1,96 @@
+*
+    margin: 0
+    padding: 0
+    border: 0
+    box-sizing: border-box
+    outline: none
+    
+    
+@import vars
+@import mixins
+@import media
+
+body 
+    background-color: $main-background
+
+
+.header 
+    margin-bottom: 160px
+
+
+.container 
+    margin: 0 auto
+    width: $site-width
+
+
+.header-link
+    text-decoration: none
+    padding: 40px 20px
+    @include txt(600, 16px, normal, $light)
+
+
+.header-menu 
+    display: flex
+    justify-content: center
+
+
+.subtitle 
+    @include txt(600, 18px, 160%, $blue)
+    text-transform: uppercase
+    margin-bottom: 10px
+
+
+.title 
+    margin-bottom: 40px
+    @include txt(800, 55px, 130%, $light)
+
+
+.dsc 
+    opacity: 0.7
+    margin-bottom: 50px
+    @include txt(600, 18px, 160%, $light)
+
+
+.button-link 
+    padding: 1rem 2rem
+    background-color: $blue
+    text-decoration: none
+    border-radius: 5px
+    margin-right: 20px
+    border: 2px solid transparent
+    display: block
+    @include txt(600, 20px, normal, $light)
+
+
+.button-link:hover 
+    background-color: $light
+    color: $blue
+    border: 2px solid $blue
+
+
+.flex 
+    display: flex
+    justify-content: space-between
+
+
+.ai-left, .ai-right 
+    width: 47%
+
+
+.ai 
+    margin-bottom: 200px
+
+
+.fa-play 
+    margin-right: 10px
+
+
+.link-box 
+    display: flex
+
+
+.middle 
+    display: flex
+    align-items: center
+    padding: 0 2rem
+    height: 60px
